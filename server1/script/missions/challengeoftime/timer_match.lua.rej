@@ -1,0 +1,9 @@
+diff a/server1/script/missions/challengeoftime/timer_match.lua b/server1/script/missions/challengeoftime/timer_match.lua	(rejected hunks)
+@@ -15,6 +15,7 @@
+     SetMissionV(VARV_STATE, 2);
+ 
+     local player_count = GetMSPlayerCount(MISSION_MATCH);
++    print("-----------------challengeoftime playercount-------------------"..player_count)
+     if (player_count == 0) then
+         -- ȡ������
+         cancel_match();
