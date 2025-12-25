@@ -126,6 +126,13 @@ BigBoss.tbVngNewAward =
 	-- [39] = {{szName="Qu¶ Hoµng Kim",tbProp={6,1,907,1,0,0},nCount=1,nRate=10,nExpiredTime=10080},},
 
 }
+BigBoss.tb_CacLoaiHoaQua = {
+    { szName = "Qu¶ m·ng cÇu", tbProp = { 6, 1, 3094, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu¶ dõa", tbProp = { 6, 1, 3100, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu¶ ®u ®ñ", tbProp = { 6, 1, 3101, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu¶ xoµi", tbProp = { 6, 1, 3093, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qña sung", tbProp = { 6, 1, 3102, 1, 0, 0 }, nCount = 5 },
+}
 
 function AddKillRecord_CallBack(Param, ResultHandle)
 	szName = BigBoss.CallBackParam[Param][1];
@@ -245,6 +252,7 @@ function BigBoss:BigBossDeath(nNpcIndex)
 -- §iÒu chØnh phÇn th­ëng rít ra - Modified by ThanhLD -20130417
 --admin edit
 	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tbVngNewAward, format("%s rít","§éc C« Thiªn Phong"), 1);
+    tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex, self.tb_CacLoaiHoaQua, format("%s rít","C¸c Lo¹i Hoa Qu¶"), 1);
 	-- BOSS»÷É±Í³¼Æ
 	local nCount = GetTask(self.TSK_PLAYER_BOSSKILLED);
 	nCount = nCount + 1;

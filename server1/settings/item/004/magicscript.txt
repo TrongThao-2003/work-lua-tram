@@ -23,7 +23,7 @@ C¸t t­êng hång bao	6	1	19	\spr\item\obj_item_jixiang.spr	347	1	1	C¸t t­êng hång 
 Hoa hång	6	0	20	\spr\item\questkey\flower.spr	330	1	1	SÏ t¹o bªn mét trËn m­a hoa hång		10000	1	1	0	285	1	1	0	1		50	0	0	0	0	0	0	0	0	0						
 Nga My MËt T?ch	6	1	21	\spr\item\questkey\obj_item_lection.spr	341	1	1	"B? quy?t vâ c«ng, c? ?ch cho c¸c ®Ö tö Nga Mi."		100	1	0	\script\item\emei-miji.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
 TÈy Tñy Kinh	6	1	22	\spr\item\questkey\obj_item_lection.spr	341	1	1	"PhËt gia b¶o ®iÓn, n?u c? thÓ ®äc hiÓu sÏ t¨ng kinh nghiÖm rÊt nhanh."		100	1	0	\script\item\xisui-jing.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
-Thi?t La H¸n	6	1	23	\spr\item\questkey\obj_item_lection.spr	341	1	1	"Mét ng­êi s¾t La H¸n di ®éng, ®¸nh ng· sÏ thu ®­îc kinh nghiÖm thùc chi?n."		100	1	0	\script\item\tie-luohan.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
+ThiÕt La H¸n	6	1	23	\spr\item\questkey\obj_item_lection.spr	341	1	1	"Mét ng­êi s¾t La H¸n di ®éng, ®¸nh ng· sÏ thu ®­îc kinh nghiÖm thùc chi?n."		100	1	0	\script\item\tie-luohan.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0
 Vâ §ang B? K?p 	6	1	24	\spr\item\questkey\obj_item_lection.spr	341	1	1	"MËt T?ch vâ c«ng Vâ §ang, rÊt c? ?ch cho c¸c ®Ö tö Vâ §ang."		100	1	0	\script\item\wudang-miji.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
 §­êng M«n B? K?p 	6	1	25	\spr\item\questkey\obj_item_lection.spr	341	1	1	"B? quy?t vâ c«ng, c? ?ch cho c¸c ®Ö tö §­êng m«n."		100	1	0	\script\item\tangmen-miji.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
 Vâ L©m MËt T?ch	6	1	26	\spr\item\questkey\obj_item_lection.spr	341	1	1	"B? quy?t vâ c«ng, c? ?ch cho c¸c hiÖp kh¸ch Vâ L©m."		100	1	0	\script\item\wulin-miji.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0						
@@ -5238,3 +5238,9 @@ LÔ Bao MÆt N¹ 2025	6	1	5124	\spr\item\script\item_chrismasbox.spr	377	1	1	NhÊn c
 M¶nh mÆt n¹	6	1	5125	\spr\item\lottery\wulincaiquan_argent.spr	41	1	1	VËt phÈm nhiÖm vô thî rÌn thÇn bİ.Dïng ®Ó chÕ t¹o lÔ bao mÆt n¹.		0	1	0	\script\item\noscript.lua	0	1	1	0	1		999	0	0	0	0	0	0	0	0	0
 §¸ tiÕn cÊp	6	1	5126	\spr\item\questkey\golden_stone.spr	41	1	1	VËt phÈm nhiÖm vô thî rÌn thÇn bİ.Dïng n©ng cÊp mÆt n¹.		0	1	0	\script\item\noscript.lua	0	1	1	0	1		999	0	0	0	0	0	0	0	0	0
 R­¬ng mÆt n¹ - Thî rÌn thÇn bİ	6	1	5127	\spr\item\script\baoxiang_jin.spr	367	1	1	R­¬ng vËt phÈm sù kiÖn thî rÌn thÇn bİ. Sö dông  sÏ nhËn ®­îc mét mÆt n¹ ngò hµnh level 3 ngÉu nhiªn		0	1	0	\script\event\thorenthanbi\item\chest_mask.lua	0	1	1	0	0		0	0	0	0	0	0	0	0	0	0
+LÔ Bao May M¾n	6	1	5128	\spr\trongthao\jx.spr	41	1	1	Khi sö dông vËt phÈm sÏ cã tØ lÖ nhËn ®­îc c¸c vËt phÈm quı gi¸		0	1	0	\script\global\roxone\item\lebaomayman.lua	0	1	1	0	0		100	0	0	0	0	0	0	0	0	0
+Hép Quµ May M¾n 	6	1	5129	\spr\item\script\item_chrismasbox.spr	377	1	1	NhÊn chuét ph¶i ®Ó sö dông.		100	1	0	\script\global\trongthao_event_mini\item\hop_qua_may_man.lua	0	1	1	0	0		200	0	0	0	0	0	0	0	0	0
+Bé nguyªn liÖu	6	1	5130	\spr\item\obj_item_jixiang.spr	347	1	1	Bé Nguyªn LiÖu nµy dïng ®Ó ghĞp Hép quµ vui vÎ		0	1	1	\script\global\trongthao_event_mini\item\nguyen_lieu_ghep_hop_qua_vui_ve.lua	0	1	1	0	0		300	0	0	0	0	0	0	0	0	0
+Hép Quµ Vui VÎ	6	1	5131	\spr\item\script\lanse_lipinhe.spr	41	1	1	NhÊn chuét ph¶i ®Ó sö dông.		0	1	1	\script\global\trongthao_event_mini\item\hop_qua_vui_ve.lua	0	1	1	0	0		300	0	0	0	0	0	0	0	0	0
+M¶nh Phi V©n	6	1	5132	\spr\item\script\seven_city_war\tianshusuipian.spr	41	1	1	M¶nh nµy lµ nguyªn liÖu ®Ó ghĞp ngùa phi v©n hoµng kim		0	1	1	\script\item\activityitem.lua	0	1	1	0	0		50	0	0	0	0	0	0	0	0	0
+ChiÕu D¹	6	1	5133	\spr\item\script\jiefang_jieri\201004\shangpinbujuan.spr	41	1	1	ChiÕu d¹ lµ nguyªn liÖu ®Ó ghĞp ngùa phi v©n hoµng kim 		0	1	1	\script\item\noscript.lua	0	1	1	0	0		50	0	0	0	0	0	0	0	0	0

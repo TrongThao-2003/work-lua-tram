@@ -3,7 +3,7 @@ Include("\\script\\global\\forbidmap.lua");
 --tinhpn 20100809: forbid Tong Map
 local tbUseOnlyInMap = 
 {
-	586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,
+	43,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,
 }
 local checkOnlyUseInMap = function()
 	local nMapId = SubWorldIdx2MapCopy(SubWorld)
@@ -49,30 +49,30 @@ function main(nItemIdx)
 	end
 	
 	--tinhpn 20100803:  forbid Tong Map
-	if %checkOnlyUseInMap() ~= 1 then
-		Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
-		return 1
-	end
-	
-	for i = 249, 318 do	--Ï´ËèµºÉ½¶´
-		if ( i == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
-			return 1
-		end
-	end	
-	for i = 375, 415 do	--ĞÂÔöËÎ½ğÕ½³¡µØÍ¼ ËÍĞÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
-		if ( i == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
-			return 1
-		end
-	end
-	for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
-		if( ForbiddenMap[i] == nMapId ) then
-			Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
-			return 1
-		end
-	end
-	
+	--if %checkOnlyUseInMap() ~= 1 then
+	--	Msg2Player("Kh«ng thÓ sö dông vËt phÈm nµy t¹i ®©y.")
+	--	return 1
+	--end
+    --
+	--for i = 249, 318 do	--Ï´ËèµºÉ½¶´
+	--	if ( i == nMapId ) then
+	--		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+	--		return 1
+	--	end
+	--end
+	--for i = 375, 415 do	--ĞÂÔöËÎ½ğÕ½³¡µØÍ¼ ËÍĞÅÈÎÎñµØÍ¼ ±ÈÎä´ó»áµØÍ¼
+	--	if ( i == nMapId ) then
+	--		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+	--		return 1
+	--	end
+	--end
+	--for i = 1, getn( ForbiddenMap ) do		--ÌØÊâµØÍ¼½ûÓÃ
+	--	if( ForbiddenMap[i] == nMapId ) then
+	--		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
+	--		return 1
+	--	end
+	--end
+
 	if (CheckAllMaps(nMapId) == 1) then
 		Msg2Player("N¬i ®©y kh«ng thÓ sö dông vËt phÈm nµy ");
 		return 1

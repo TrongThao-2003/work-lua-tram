@@ -6,24 +6,30 @@
 Include("\\script\\missions\\chientruongsinhtu\\include.lua")
 
 function start_missions(map)
-    print("---------------------------------------------run  2---------------------------------------------");
-    local index
-    local nOldSubWorld = SubWorld;
     for i = 1, getn(map) do
-        index = SubWorldID2Idx(map[i]);
+        local index = SubWorldID2Idx(map[i]);
         if (index >= 0) then
             SubWorld = index;
-            OpenMission(22);
+            OpenMission(MISSION_MATCH);
         end
     end
-    SubWorld = nOldSubWorld;
-    print("---------------------------------------------run 3---------------------------------------------");
+end
+
+function close_missions(map)
+    for i = 1, getn(map) do
+       local index = SubWorldID2Idx(map[i]);
+        if (index >= 0) then
+            SubWorld = index;
+            if (GetMissionV(VARV_STATE) ~= 0) then
+                CloseMission(MISSION_MATCH);
+            end
+        end
+    end
 end
 
 function OnTrigger()
-    print("---------------------------------------------run 1 ---------------------------------------------");
     for i=1, getn(tbLevelMaps) do
-        start_missions(tbLevelMaps[1], MISSION_MATCH);
+        close_missions(tbLevelMaps[i], MISSION_MATCH, VARV_STATE)
+        start_missions(tbLevelMaps[i], MISSION_MATCH);
     end
-    print("---------------------------------------------run 4 ---------------------------------------------");
 end

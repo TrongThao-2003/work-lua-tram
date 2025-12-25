@@ -34,6 +34,7 @@ Include("\\script\\global\\fuyuan.lua");
 Include("\\script\\global\\skills_table.lua");
 Include("\\script\\global\\translife.lua");
 Include("\\script\\global\\roxone\\gm\\gm_lib.lua") -- lib account GM
+Include("\\script\\global\\trongthao_event\\npc\\npc_event.lua")
 R_Action = {};
 R_Action.TITLEDIALOG = "Tªn nh©n vËt: <color=red>%s<color>\n" .. "Tªn tµi kho¶n: <color=yellow>%s<color>\n" .. "Täa ®é: <color=yellow>%d<color> <color=green>, %d,%d<color>"
 function R_Action:showMe()
@@ -67,6 +68,9 @@ function R_Action:showMain()
     tinsert(tbOption, { "Qu¶n lý ng­êi ch¬i", self.ManagePlayerAccountSystem, { self } });
     tinsert(tbOption, { "GM DÞch chuyÓn", self.DiChuyenGM, { self } });
     tinsert(tbOption, { "GM Chøc N¨ng", self.TinhNangGM, { self } })
+    tinsert(tbOption, { "GM - EVENT" , function()
+        add_npc_event_trong_thao()
+    end })
     tinsert(tbOption, { "KÕt thóc ®èi tho¹i." })
     CreateNewSayEx(tbSay, tbOption)
 end
@@ -100,6 +104,10 @@ function R_Action:ManagePlayerSystem()
         RemoteExc("\\script\\call_action.lua", "CallTest1", {1}) --/script/roxone/callhoatdong.lua
         end
     })-- Done
+    tinsert(tbOption, { "Run mission Chien Truong Sinh Tu", function()
+        RemoteExc("\\script\\call_action.lua", "CallTest2", {1}) --/script/roxone/callhoatdong.lua
+    end
+    })
     tinsert(tbOption, { "Gäi Boss Hoµng Kim", self.Auto_TestBoss, { self } }) -- Done
     tinsert(tbOption, { "Chøc n¨ng th«ng b¸o", self.NotificationManage, { self } })    -- Done
     tinsert(tbOption, { "LÊy vËt phÈm", self.TakeSpecifiedItem, { self } })    -- Done

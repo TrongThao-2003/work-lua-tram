@@ -98,8 +98,14 @@ local tbVnNewItemDropAward = {
 	{{szName="MÀt Tﬁch",tbProp={6,1,58,1,0,0},nCount=1,nRate=0.5},},
 	{{szName="MÀt Tﬁch",tbProp={6,1,59,1,0,0},nCount=1,nRate=0.5},},
     {{szName="M∂nh m∆t nπ - ThÓ rÃn th«n b›",tbProp={6,1,5125,1,0,0},nCount=3,nRate=100,nExpiredTime=20251101},}, -- Tho ren than bi item
+}
 
-	
+local tb_CacLoaiHoaQua = {
+    { szName = "Qu∂ m∑ng c«u", tbProp = { 6, 1, 3094, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu∂ dıa", tbProp = { 6, 1, 3100, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu∂ Æu ÆÒ", tbProp = { 6, 1, 3101, 1, 0, 0 }, nCount = 5 },
+    { szName = "Qu∂ xoµi", tbProp = { 6, 1, 3093, 1, 0, 0 }, nCount = 5 },
+    { szName = "QÒa sung", tbProp = { 6, 1, 3102, 1, 0, 0 }, nCount = 5 },
 }
 
 function OnDeath( nNpcIndex )
@@ -126,8 +132,9 @@ function OnDeath( nNpcIndex )
 --	end;
 	--Renew boss award - Modified by ThanhLD - 10130417
 	--admin off
-	tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tbVnNewItemDropAward,format("killed_%s",GetNpcName(nNpcIndex)))	
-	-- Œ‰¡÷»Ÿ”˛¡Ó≈∆µÙ¬‰
+    tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tb_CacLoaiHoaQua,format("killed_%s",GetNpcName(nNpcIndex)));
+    tbDropTemplet:GiveAwardByList(nNpcIndex, PlayerIndex,%tbVnNewItemDropAward,format("killed_%s",GetNpcName(nNpcIndex)))
+    -- Œ‰¡÷»Ÿ”˛¡Ó≈∆µÙ¬‰
 	if (GetProductRegion() == "cn" or GetProductRegion() == "cn_ib") then
 		local szNpcName = GetNpcName(nNpcIndex);
 		if (DROPRATE_BOSS_HONOURRATE[szNpcName]) then

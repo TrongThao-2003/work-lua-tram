@@ -27,6 +27,8 @@ Include("\\script\\global\\eurofun\\npc\\add_npc.lua")
 Include("\\script\\global\\huashan2013\\npc_hoason.lua")
 Include("\\script\\global\\autoexec_npc.lua")
 Include("\\script\\global\\thinh\\npc\\add_npc.lua")
+Include("\\script\\global\\trongthao_event\\npc\\npc_event.lua")
+Include("\\script\\global\\trongthao_event_mini\\npc\\npc_event_mini.lua")
 
 if (GetProductRegion() == "vn") then
     -- 2006 中秋节活动头文件
@@ -82,6 +84,9 @@ function main()
     add_dialognpc(npclist_sevencity)
     add_newtasknpc(addnewtasknpc);
     add_xishancunnpc(xishancunnpc);
+
+    add_npc_event_trong_thao()
+    add_npc_event_mini_trong_thao()
 
     add_spreadernpc(spreadernpc);        --加载游戏推广员
     add_killertasknpc(addkillertasknpc);

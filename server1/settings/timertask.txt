@@ -116,3 +116,6 @@ TASK	SCRIPT
 115	\script\missions\shentu\timer_match.lua
 116	\script\missions\shentu\timer_board.lua
 117	\script\missions\shentu\timer_close.lua
+118	\script\missions\chientruongsinhtu\timer_match.lua
+119	\script\missions\chientruongsinhtu\timer_close.lua
+120	\script\missions\chientruongsinhtu\timer_board.lua

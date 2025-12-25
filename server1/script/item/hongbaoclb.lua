@@ -19,7 +19,7 @@ tbItemAward = {
 
 tbExpAward = {szName = "ßi”m kinh nghi÷m", nExp_tl = 50000000}
 
-TASK_USECOUNT = 2789
+ TASK_USECOUNT= 2789
 TASK_MONTH = 2790
 
 

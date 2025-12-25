@@ -69,3 +69,4 @@ MISSION	SCRIPT
 68	\script\missions\killbossmatch\missionhead_ready.lua
 69	\script\missions\killbossmatch\missionhead.lua
 70	\script\missions\shentu\mission_match.lua
+71	\script\missions\chientruongsinhtu\mission_match.lua

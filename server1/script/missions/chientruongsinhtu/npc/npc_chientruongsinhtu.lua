@@ -18,7 +18,7 @@ end
 function tieptuc2()
     local oldSubWorld = SubWorld
     print("--------------------------------------SubWorld: "..oldSubWorld)
-    index = SubWorldID2Idx(995)
+    index = SubWorldID2Idx(996)
     if index > 0 then
         SubWorld = index
         print("--------------------------------------index: "..index)
